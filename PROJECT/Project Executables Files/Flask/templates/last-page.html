@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBridge</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='Style2.css')}}">
+</head>
+<body>
+    <ul>
+        <li style="float:left"><a class="active" href="{{ url_for('index') }}"><b>PPM of CO</b></a></li>
+        <li><a href="{{ url_for('index') }}"><b>Home</b></a></li>
+    </ul>
+    <div>
+        <h1><u>PREDICTION</u></h1>
+        <h2>{{result}}</h2>
+        <a href="{{ url_for('index') }}">Go back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoForecast</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='Style.css') }}">
+</head>
+<body>
+    <ul>
+        <li style="float:left"><a class="active" href=""><b>EcoForecast</b></a></li>
+        <li><a href="{{ url_for('contact') }}"><b>Contact</b></a></li>
+        <li><a href="{{ url_for('submit') }}"><b>Predict</b></a></li>
+        <li><a href="{{ url_for('index') }}"><b>Home</b></a></li>
+    </ul>
+    <div>
+        <h1>EcoForecast: AI-powered Prediction Of<br>Carbon Monoxide Levels</h1>
+        <p><u><span style="color:red">PREDICTING CARBON MONOXIDE FOR CLEANER SKIES</span></u></p>
+        <a href="{{ url_for('submit') }}"><button><b>Get Started</b></button></a>
+    </div>
+</body>
+</html>
+
